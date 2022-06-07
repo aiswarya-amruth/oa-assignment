@@ -1,0 +1,233 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*section 1*/
+.banner{
+	background-image: url("../images/academy-banner.jpg");
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	padding: 0 80px;
+	align-items: center;
+}
+.banner div{
+	width: 60%;
+	text-align: right;
+
+}
+.banner h2{
+	font-size: 60px;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+.banner span{
+	display: block;
+}
+
+/*section 2*/
+.training{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 60px;
+}
+.training p::before{
+	content: "{";
+	color: darkred;
+}
+.training p::after{
+	content: "}";
+	color: darkred;s
+}
+.training .info{
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	font-size: 24px;
+	font-weight: bolder;
+	padding: 20px;
+	margin-left:-500px;
+}
+.training p{
+	margin-bottom: 20px;
+}
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+
+/*section 3 and 5*/
+.lang-info{
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
+.lang-info p{
+	/*width: 70%;*/
+	font-size: 22px;
+	padding: 20px;
+}
+
+/*section 4*/
+.courses{
+	background-image: url("../images/modulebg.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+	flex-wrap: wrap;
+}
+.courses div{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	border-radius: 12px;
+	width: 20%;
+	text-align: center;
+	padding: 15px;
+	margin: 0 10px 10px	;
+}
+/*section 6*/
+.interview{
+	display: flex;
+	flex-wrap: wrap;
+	height: 60vh;
+	padding: 20px 0;
+}
+.interview .left{
+	background-image: url("../images/testsbg.jpg");
+	width: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 50px;
+}
+.interview .right{
+	background-image: url("../images/intrvwbg.jpg");
+	width: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 50px;
+
+}
+.interview p{
+	background-color: rgba(6, 8, 11, 0.7);
+	display: flex;
+	align-items: center;
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+	height: 100%;
+	width: 100%;
+}
+
+/*section 7*/
+.ready{
+	text-align: center;
+	font-size: 70px;
+	font-weight: bolder;
+	padding: 50px;
+}
+
+/*section 8*/
+.join{
+	text-align: center;
+	font-size: 25px;
+}
+.join a{
+	text-decoration: none;
+	color: #f26422;
+	border: 3px solid #f26422;
+	padding: 15px;
+}
+
+/*section 9*/
+.address{
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	text-align: center;
+	padding: 50px;
+}
+.address p{
+	font-size: 30px;
+}
+.address h1{
+	padding:25px;
+}
+.address .cp-off{
+	padding: 0 40px;
+}
+.address .rd-off{
+	padding: 0 40px;
+}
+
+
+/*MediaQuery*/
+
+@media screen and (max-width: 576px){
+
+	/*section 1*/
+	.banner{
+		background-image: none;
+		background-color: #c6cdd5;
+		justify-content: center;
+		padding: 0;
+	}
+	.banner div{
+		text-align: left;
+		
+	}
+	.banner span{
+		display: inline;
+	}
+
+	/*section 2*/
+	.training{
+		padding: 20px;
+	}
+	.training .info{
+		margin-left: 0;
+	}
+
+	/*section 3 and 5*/
+	.lang-info{
+		width: 100%;
+	}
+	.lang-info p{
+		font-size: 20px;
+	}
+
+	/*section 4*/
+	.courses div{
+		width: 50%;
+	}
+
+	/*section 7*/
+	.ready{
+		font-size: 40px;
+		font-weight: bolder;
+		}
+
+	/*section 9*/
+	.address p{
+		font-size: 25px;
+	}
+	.interview{
+		height: auto;
+	}
+	.interview .left{
+		width: 100%;
+	}
+	.interview .right{
+		width: 100%;
+	}
+
+}
